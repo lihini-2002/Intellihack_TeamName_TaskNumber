@@ -1,0 +1,338 @@
+[
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is benchmarks according to the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "Model\nAIME 2024 MATH-500 GPQA Diamond LiveCodeBench\npass@1 cons@64 pass@1 pass@1 pass@1\nQwQ-32B-Preview 50.0 60.0 90.6 54.5 41.9\nDeepSeek-R1-Zero-Qwen-32B 47.0 60.0 91.6 55.0 40.2\nDeepSeek-R1-Distill-Qwen-32B 72.6 83.3 94.3 62.1 57.2\nTable 6 |Comparison of distilled and RL Models on Reasoning-Related Benchmarks. However, DeepSeek-R1-\nDistill-Qwen-32B, which is distilled from DeepSeek-R1, performs significantly better than\nDeepSeek-R1-Zero-Qwen-32B across all benchmarks."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of bias mentioned in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "Here, we\nonly feed the final summary to evaluation to avoid the length bias."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is Other?"
+      },
+      {
+        "role": "assistant",
+        "content": "Other\ndense models also achieve impressive results, significantly outperforming other instruction-\ntuned models based on the same underlying checkpoints."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does Therefore work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Therefore, we\ndefault to pass@\ud835\udc58evaluation (Chen et al., 2021) and report pass@1 using a non-zero temperature."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is DeepSeek?"
+      },
+      {
+        "role": "assistant",
+        "content": "Drawback of DeepSeek-R1-Zero Although DeepSeek-R1-Zero exhibits strong reasoning\ncapabilities and autonomously develops unexpected and powerful reasoning behaviors, it faces\nseveral issues. For instance, DeepSeek-R1-Zero struggles with challenges like poor readability,\nand language mixing. To make reasoning processes more readable and share them with the\nopen community, we explore DeepSeek-R1, a method that utilizes RL with human-friendly\ncold-start data."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does the paper define reinforcement learning?"
+      },
+      {
+        "role": "assistant",
+        "content": "Training language models to self-correct via reinforcement learning."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does the paper define fine-tuning?"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning-oriented Reinforcement Learning\nAfter fine-tuning DeepSeek-V3-Base on the cold start data, we apply the same large-scale\nreinforcement learning training process as employed in DeepSeek-R1-Zero."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the relationship between DeepSeek and Qwen?"
+      },
+      {
+        "role": "assistant",
+        "content": "pass@1 cons@64 pass@1 pass@1 pass@1 rating\nGPT-4o-0513 9.3 13.4 74.6 49.9 32.9 759\nClaude-3.5-Sonnet-1022 16.0 26.7 78.3 65.0 38.9 717\nOpenAI-o1-mini 63.6 80.0 90.0 60.0 53.8 1820\nQwQ-32B-Preview 50.0 60.0 90.6 54.5 41.9 1316\nDeepSeek-R1-Distill-Qwen-1.5B28.9 52.7 83.9 33.8 16.9 954\nDeepSeek-R1-Distill-Qwen-7B 55.5 83.3 92.8 49.1 37.6 1189\nDeepSeek-R1-Distill-Qwen-14B69.7 80.0 93.9 59.1 53.1 1481\nDeepSeek-R1-Distill-Qwen-32B 72.6 83.3 94.3 62.1 57.2 1691\nDeepSeek-R1-Distill-Llama-8B 50.4 80.0 89.1 49.0 39.6 1205\nDeepSeek-R1-Distill-Llama-70B70.0 86.7 94.5 65.2 57.5 1633\nTable 5 |Comparison of DeepSeek-R1 distilled models and other comparable models on\nreasoning-related benchmarks. As shown in Table 5, simply distilling DeepSeek-R1\u2019s outputs enables the efficient DeepSeek-\nR1-7B (i.e., DeepSeek-R1-Distill-Qwen-7B, abbreviated similarly below) to outperform non-\nreasoning models like GPT-4o-0513 across the board. DeepSeek-R1-14B surpasses QwQ-32B-"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of reinforcement learning mentioned in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "improved through large-scale reinforcement learning (RL), even without using supervised\nfine-tuning (SFT) as a cold start. DeepSeek-R1-Zero: Reinforcement Learning on the Base Model\nReinforcement learning has demonstrated significant effectiveness in reasoning tasks, as ev-\nidenced by our previous works (Shao et al., 2024; Wang et al., 2023)."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is reinforcement learning according to the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "icant gains are achieved through large-scale reinforcement learning."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the relationship between However and Wang?"
+      },
+      {
+        "role": "assistant",
+        "content": "However, the challenge\nof effective test-time scaling remains an open question for the research community. However, none of these methods has achieved general reasoning\nperformance comparable to OpenAI\u2019s o1 series models."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the advantages of Zijia Zhu\nZijun Liu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Zijia Zhu\nZijun Liu*\nZilin Li\nZiwei Xie\nZiyang Song\nZizheng Pan\nZhen Huang\nZhipeng Xu\nZhongyu Zhang\nZhen Zhang\nWithin each role, authors are listed alphabetically by the first name."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of reinforcement learning mentioned in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "Contributions\nPost-Training: Large-Scale Reinforcement Learning on the Base Model\n\u2022 We directly apply RL to the base model without relying on supervised fine-tuning (SFT) as\na preliminary step."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the purpose of benchmarks in the context of this research?"
+      },
+      {
+        "role": "assistant",
+        "content": "For education-oriented knowledge benchmarks such as MMLU, MMLU-Pro, and GPQA\nDiamond, DeepSeek-R1 demonstrates superior performance compared to DeepSeek-V3."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is Zero?"
+      },
+      {
+        "role": "assistant",
+        "content": "Table 3 |An interesting \u201caha moment\u201d of an intermediate version of DeepSeek-R1-Zero. Drawback of DeepSeek-R1-Zero Although DeepSeek-R1-Zero exhibits strong reasoning"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Explain the concept of DeepSeek."
+      },
+      {
+        "role": "assistant",
+        "content": "However, in this stage,\nwe expand the dataset by incorporating additional data, some of which use a generative reward\nmodel by feeding the ground-truth and model predictions into DeepSeek-V3 for judgment."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What method was used to evaluate LLM in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "Notably, it is the\nfirst open research to validate that reasoning capabilities of LLMs can be incentivized\npurely through RL, without the need for SFT."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Explain the concept of Specifically."
+      },
+      {
+        "role": "assistant",
+        "content": "Specifically, we train the model using a combination\nof reward signals and diverse prompt distributions."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of language model mentioned in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "Instruction-following\nevaluation for large language models."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Explain the concept of Evaluation Setup We."
+      },
+      {
+        "role": "assistant",
+        "content": "Evaluation Setup We set the maximum generation length to 32,768 tokens for the models."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Explain the concept of GPQA LiveCode CodeForcesDiamond Bench."
+      },
+      {
+        "role": "assistant",
+        "content": "Distilled Model Evaluation\nModel AIME 2024 MATH-500 GPQA LiveCode CodeForcesDiamond Bench\npass@1 cons@64 pass@1 pass@1 pass@1 rating\nGPT-4o-0513 9.3 13.4 74.6 49.9 32.9 759\nClaude-3.5-Sonnet-1022 16.0 26.7 78.3 65.0 38.9 717\nOpenAI-o1-mini 63.6 80.0 90.0 60.0 53.8 1820"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the characteristics of fine-tuning as described in the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "10\n2.3.3 Rejection Sampling and Supervised Fine-Tuning ."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the characteristics of benchmarks as described in the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "Experiment\nBenchmarks We evaluate models on MMLU (Hendrycks et al., 2020), MMLU-Redux (Gema\net al., 2024), MMLU-Pro (Wang et al., 2024), C-Eval (Huang et al., 2023), and CMMLU (Li et al.,\n2023), IFEval (Zhou et al., 2023), FRAMES (Krishna et al., 2024), GPQA Diamond (Rein et al.,\n2023), SimpleQA (OpenAI, 2024c), C-SimpleQA (He et al., 2024), SWE-Bench Verified (OpenAI,\n11"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What method was used to evaluate benchmarks in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "In addition to standard benchmarks, we\nalso evaluate our models on open-ended generation tasks using LLMs as judges. Evaluation Prompts Following the setup in DeepSeek-V3, standard benchmarks such as\nMMLU, DROP , GPQA Diamond, and SimpleQA are evaluated using prompts from the simple-"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How might RAG impact the field according to the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "For each question, we sample\n16 responses and calculate the overall average accuracy to ensure a stable evaluation."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of Second?"
+      },
+      {
+        "role": "assistant",
+        "content": "Second, while distillation strategies are both economical and effective, advancing\nbeyond the boundaries of intelligence may still require more powerful base models and larger-\nscale reinforcement learning. Second,"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the advantages of Zhang?"
+      },
+      {
+        "role": "assistant",
+        "content": "Zhang, J. Zhang, T. Zhang, J."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of A Contributions?"
+      },
+      {
+        "role": "assistant",
+        "content": "15\n5 Conclusion, Limitations, and Future Work 16\nA Contributions and Acknowledgments 20\n2"
+      }
+    ]
+  }
+]

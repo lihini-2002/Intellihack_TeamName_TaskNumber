@@ -1,0 +1,338 @@
+[
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does the paper define benchmarks?"
+      },
+      {
+        "role": "assistant",
+        "content": "Table 2 provides a comparative analysis between DeepSeek-R1-Zero and OpenAI\u2019s o1-0912\nmodels across a variety of reasoning-related benchmarks."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How can China be implemented?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since accessing the OpenAI-o1-1217 API is challenging in mainland China, we report its perfor-\nmance based on official reports."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What limitations of bias does the paper identify?"
+      },
+      {
+        "role": "assistant",
+        "content": "DeepSeek-R1 avoids introducing length bias during GPT-based evaluations, further solidifying\nits robustness across multiple tasks."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the relationship between However and First?"
+      },
+      {
+        "role": "assistant",
+        "content": "However, this approach encounters several challenges when scaling up the training."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How can Acknowledgments be implemented?"
+      },
+      {
+        "role": "assistant",
+        "content": "15\n5 Conclusion, Limitations, and Future Work 16\nA Contributions and Acknowledgments 20\n2"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Explain the concept of Zilin Li\nZiwei Xie\nZiyang Song\nZizheng Pan\nZhen Huang\nZhipeng Xu\nZhongyu Zhang\nZhen Zhang\nWithin."
+      },
+      {
+        "role": "assistant",
+        "content": "Zijia Zhu\nZijun Liu*\nZilin Li\nZiwei Xie\nZiyang Song\nZizheng Pan\nZhen Huang\nZhipeng Xu\nZhongyu Zhang\nZhen Zhang\nWithin each role, authors are listed alphabetically by the first name."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What future directions for LLM are suggested in the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "In this section, we\nexplore the potential of LLMs to develop reasoning capabilities without any supervised data,"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the purpose of fine-tuning in the context of this research?"
+      },
+      {
+        "role": "assistant",
+        "content": "Contributions\nPost-Training: Large-Scale Reinforcement Learning on the Base Model\n\u2022 We directly apply RL to the base model without relying on supervised fine-tuning (SFT) as\na preliminary step."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the advantages of Furthermore?"
+      },
+      {
+        "role": "assistant",
+        "content": "Furthermore, performance can be further enhanced with\nthe inclusion of a small amount of cold-start data."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is bias according to the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "Length-controlled alpacaeval: A simple\nway to debias automatic evaluators."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does DeepSeek work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Performance of DeepSeek-R1-Zero Figure 2 depicts the performance trajectory of DeepSeek-\nR1-Zero on the AIME 2024 benchmark throughout the RL training process. As illustrated,\nDeepSeek-R1-Zero demonstrates a steady and consistent enhancement in performance as the\nRL training advances. Table 2 provides a comparative analysis between DeepSeek-R1-Zero and OpenAI\u2019s o1-0912\nmodels across a variety of reasoning-related benchmarks."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of DeepSeek?"
+      },
+      {
+        "role": "assistant",
+        "content": "Drawback of DeepSeek-R1-Zero Although DeepSeek-R1-Zero exhibits strong reasoning\ncapabilities and autonomously develops unexpected and powerful reasoning behaviors, it faces\nseveral issues. For instance, DeepSeek-R1-Zero struggles with challenges like poor readability,\nand language mixing. To make reasoning processes more readable and share them with the\nopen community, we explore DeepSeek-R1, a method that utilizes RL with human-friendly\ncold-start data."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the purpose of Using Qwen2?"
+      },
+      {
+        "role": "assistant",
+        "content": "Using Qwen2.5-\n32B (Qwen, 2024b) as the base model, direct distillation from DeepSeek-R1 outperforms applying\nRL on it."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the purpose of benchmarks in the context of this research?"
+      },
+      {
+        "role": "assistant",
+        "content": "As a result, DeepSeek-R1 has not demonstrated a huge improvement\nover DeepSeek-V3 on software engineering benchmarks."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What challenges are associated with LLM according to the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via\nReinforcement Learning\nDeepSeek-AI\nresearch@deepseek.com\nAbstract\nWe introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of Using?"
+      },
+      {
+        "role": "assistant",
+        "content": "\u2022 Using the reasoning data generated by DeepSeek-R1, we fine-tuned several dense models\nthat are widely used in the research community."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does the paper define benchmarks?"
+      },
+      {
+        "role": "assistant",
+        "content": "pass@1 cons@64 pass@1 pass@1 pass@1 rating\nGPT-4o-0513 9.3 13.4 74.6 49.9 32.9 759\nClaude-3.5-Sonnet-1022 16.0 26.7 78.3 65.0 38.9 717\nOpenAI-o1-mini 63.6 80.0 90.0 60.0 53.8 1820\nQwQ-32B-Preview 50.0 60.0 90.6 54.5 41.9 1316\nDeepSeek-R1-Distill-Qwen-1.5B28.9 52.7 83.9 33.8 16.9 954\nDeepSeek-R1-Distill-Qwen-7B 55.5 83.3 92.8 49.1 37.6 1189\nDeepSeek-R1-Distill-Qwen-14B69.7 80.0 93.9 59.1 53.1 1481\nDeepSeek-R1-Distill-Qwen-32B 72.6 83.3 94.3 62.1 57.2 1691\nDeepSeek-R1-Distill-Llama-8B 50.4 80.0 89.1 49.0 39.6 1205\nDeepSeek-R1-Distill-Llama-70B70.0 86.7 94.5 65.2 57.5 1633\nTable 5 |Comparison of DeepSeek-R1 distilled models and other comparable models on\nreasoning-related benchmarks."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is the purpose of OpenAI?"
+      },
+      {
+        "role": "assistant",
+        "content": "Experiment\nBenchmarks We evaluate models on MMLU (Hendrycks et al., 2020), MMLU-Redux (Gema\net al., 2024), MMLU-Pro (Wang et al., 2024), C-Eval (Huang et al., 2023), and CMMLU (Li et al.,\n2023), IFEval (Zhou et al., 2023), FRAMES (Krishna et al., 2024), GPQA Diamond (Rein et al.,\n2023), SimpleQA (OpenAI, 2024c), C-SimpleQA (He et al., 2024), SWE-Bench Verified (OpenAI,\n11"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How can Although be implemented?"
+      },
+      {
+        "role": "assistant",
+        "content": "Although ablation experiments show\nthat such alignment results in a slight degradation in the model\u2019s performance, this reward"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does DeepSeek work?"
+      },
+      {
+        "role": "assistant",
+        "content": "R1-7B (i.e., DeepSeek-R1-Distill-Qwen-7B, abbreviated similarly below) to outperform non-\nreasoning models like GPT-4o-0513 across the board. DeepSeek-R1-14B surpasses QwQ-32B-\nPreview on all evaluation metrics, while DeepSeek-R1-32B and DeepSeek-R1-70B significantly\nexceed o1-mini on most benchmarks. Reinforcement Learning\nIn Section 3.2, we can see that by distilling DeepSeek-R1, the small model can achieve impressive\nresults."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the advantages of February?"
+      },
+      {
+        "role": "assistant",
+        "content": "In American Invitational\nMathematics Examination - AIME 2024, February 2024."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is distillation according to the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "this paper require enormous computational power and may not even achieve the performance\nof distillation. Second, while distillation strategies are both economical and effective, advancing\nbeyond the boundaries of intelligence may still require more powerful base models and larger-\nscale reinforcement learning."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of DeepSeek?"
+      },
+      {
+        "role": "assistant",
+        "content": "To address these issues and further enhance reasoning performance, we introduce\nDeepSeek-R1, which incorporates a small amount of cold-start data and a multi-stage training\npipeline. Specifically, we begin by collecting thousands of cold-start data to fine-tune the\nDeepSeek-V3-Base model. Following this, we perform reasoning-oriented RL like DeepSeek-R1-\nZero."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is benchmarks according to the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "The evaluation results demonstrate that\nthe distilled smaller dense models perform exceptionally well on benchmarks."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "How does the paper define language model?"
+      },
+      {
+        "role": "assistant",
+        "content": "Deepseekmath:\nPushing the limits of mathematical reasoning in open language models."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of BERT mentioned in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hubert, L."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What are the key components of GPT mentioned in the research?"
+      },
+      {
+        "role": "assistant",
+        "content": "pass@1 cons@64 pass@1 pass@1 pass@1 rating\nGPT-4o-0513 9.3 13.4 74.6 49.9 32.9 759\nClaude-3.5-Sonnet-1022 16.0 26.7 78.3 65.0 38.9 717\nOpenAI-o1-mini 63.6 80.0 90.0 60.0 53.8 1820\nQwQ-32B-Preview 50.0 60.0 90.6 54.5 41.9 1316\nDeepSeek-R1-Distill-Qwen-1.5B28.9 52.7 83.9 33.8 16.9 954\nDeepSeek-R1-Distill-Qwen-7B 55.5 83.3 92.8 49.1 37.6 1189\nDeepSeek-R1-Distill-Qwen-14B69.7 80.0 93.9 59.1 53.1 1481\nDeepSeek-R1-Distill-Qwen-32B 72.6 83.3 94.3 62.1 57.2 1691\nDeepSeek-R1-Distill-Llama-8B 50.4 80.0 89.1 49.0 39.6 1205\nDeepSeek-R1-Distill-Llama-70B70.0 86.7 94.5 65.2 57.5 1633\nTable 5 |Comparison of DeepSeek-R1 distilled models and other comparable models on\nreasoning-related benchmarks. As shown in Table 5, simply distilling DeepSeek-R1\u2019s outputs enables the efficient DeepSeek-\nR1-7B (i.e., DeepSeek-R1-Distill-Qwen-7B, abbreviated similarly below) to outperform non-\nreasoning models like GPT-4o-0513 across the board."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "content": "What is reinforcement learning according to the paper?"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning-oriented Reinforcement Learning\nAfter fine-tuning DeepSeek-V3-Base on the cold start data, we apply the same large-scale\nreinforcement learning training process as employed in DeepSeek-R1-Zero."
+      }
+    ]
+  }
+]
