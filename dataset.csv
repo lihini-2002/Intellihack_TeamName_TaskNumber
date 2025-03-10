@@ -1,0 +1,155 @@
+text,question,answer
+"Introduction
+How could the DeepSeek-V3 model achieve incredible performance and economical training as an open source model?","What does this mean: Introduction
+How could the DeepSeek-V3 model achieve incredible performance and economical training as an open source model??","Introduction
+How could the DeepSeek-V3 model achieve incredible performance and economical training as an open source model?"
+"In this paper review, we will explore the various features that were invented and applied to build the DeepSeek-V3 model.","What does this mean: In this paper review, we will explore the various features that were invented and applied to build the DeepSeek-V3 model.?","In this paper review, we will explore the various features that were invented and applied to build the DeepSeek-V3 model."
+The way the paper presents the model may seem complicated to people who are unfamiliar with the new conceptualization invented by DeepSeek.,What does this mean: The way the paper presents the model may seem complicated to people who are unfamiliar with the new conceptualization invented by DeepSeek.?,The way the paper presents the model may seem complicated to people who are unfamiliar with the new conceptualization invented by DeepSeek.
+The two main components are Multi-Head Latent Attention(MLA) and DeepSeekMoE.,What does this mean: The two main components are Multi-Head Latent Attention(MLA) and DeepSeekMoE.?,The two main components are Multi-Head Latent Attention(MLA) and DeepSeekMoE.
+"By storing a compressed vector for the KV cache, the DeepSeek model can improve both speed by reducing data copying and memory efficiency by using a smaller compressed vector.","What does this mean: By storing a compressed vector for the KV cache, the DeepSeek model can improve both speed by reducing data copying and memory efficiency by using a smaller compressed vector.?","By storing a compressed vector for the KV cache, the DeepSeek model can improve both speed by reducing data copying and memory efficiency by using a smaller compressed vector."
+DeepSeek improved the conventional way of Multi-Token Prediction(MTP).,What does this mean: DeepSeek improved the conventional way of Multi-Token Prediction(MTP).?,DeepSeek improved the conventional way of Multi-Token Prediction(MTP).
+"Instead of previous parallel MTP, DeepSeek decided sequential MTP.","What does this mean: Instead of previous parallel MTP, DeepSeek decided sequential MTP.?","Instead of previous parallel MTP, DeepSeek decided sequential MTP."
+"In actual training, DeepSeek opted to generate only one additional token, presumably due to the computational cost which is caused by using many MTP modules.","What does this mean: In actual training, DeepSeek opted to generate only one additional token, presumably due to the computational cost which is caused by using many MTP modules.?","In actual training, DeepSeek opted to generate only one additional token, presumably due to the computational cost which is caused by using many MTP modules."
+"Infrastructure
+3.1 DualPipe
+Since the U.S. did not export great GPUs like the NVIDIA H100 to China, DeepSeek researchers had to devise innovative methods to accelerate model training using the weaker H800 GPUs.","What does this mean: Infrastructure
+3.1 DualPipe
+Since the U.S. did not export great GPUs like the NVIDIA H100 to China, DeepSeek researchers had to devise innovative methods to accelerate model training using the weaker H800 GPUs.?","Infrastructure
+3.1 DualPipe
+Since the U.S. did not export great GPUs like the NVIDIA H100 to China, DeepSeek researchers had to devise innovative methods to accelerate model training using the weaker H800 GPUs."
+"Because the DeepSeek model was trained on 2048 H800 GPUs, communication between GPUs accounts for large portion of training time.","What does this mean: Because the DeepSeek model was trained on 2048 H800 GPUs, communication between GPUs accounts for large portion of training time.?","Because the DeepSeek model was trained on 2048 H800 GPUs, communication between GPUs accounts for large portion of training time."
+DeepSeek invented a innovative method to reduce bubble.,What does this mean: DeepSeek invented a innovative method to reduce bubble.?,DeepSeek invented a innovative method to reduce bubble.
+"Prior to DeepSeek, researchers found that the backward process can be split into two processes, which are backward for input and backward for weight, in order to remove more bubbles.","What does this mean: Prior to DeepSeek, researchers found that the backward process can be split into two processes, which are backward for input and backward for weight, in order to remove more bubbles.?","Prior to DeepSeek, researchers found that the backward process can be split into two processes, which are backward for input and backward for weight, in order to remove more bubbles."
+"In order to reduce the number of communication, the DeepSeek’s DualPipe combines the forward process and the backward for input by initiating training data from two devices in the opposite directions as illustrated in following figure.","What does this mean: In order to reduce the number of communication, the DeepSeek’s DualPipe combines the forward process and the backward for input by initiating training data from two devices in the opposite directions as illustrated in following figure.?","In order to reduce the number of communication, the DeepSeek’s DualPipe combines the forward process and the backward for input by initiating training data from two devices in the opposite directions as illustrated in following figure."
+"In DeepSeek-V3 model, the researchers have found that they should reduce precision in the parts of model where heavy computations are executed, such as matrix multiplication.","What does this mean: In DeepSeek-V3 model, the researchers have found that they should reduce precision in the parts of model where heavy computations are executed, such as matrix multiplication.?","In DeepSeek-V3 model, the researchers have found that they should reduce precision in the parts of model where heavy computations are executed, such as matrix multiplication."
+The mixed precision training of DeepSeek is shown in the following figure.,What does this mean: The mixed precision training of DeepSeek is shown in the following figure.?,The mixed precision training of DeepSeek is shown in the following figure.
+"To cope with this issue, DeepSeek implemented Fine-Grained Quantization.","What does this mean: To cope with this issue, DeepSeek implemented Fine-Grained Quantization.?","To cope with this issue, DeepSeek implemented Fine-Grained Quantization."
+"Reinforcement Learning
+After supervised fine-tuning, DeepSeek additionally implemented reinforcement learning.","What does this mean: Reinforcement Learning
+After supervised fine-tuning, DeepSeek additionally implemented reinforcement learning.?","Reinforcement Learning
+After supervised fine-tuning, DeepSeek additionally implemented reinforcement learning."
+"Another innovative idea of DeepSeek is including the chain-of-thought to the reward, whereas conventional models only included final reward based on the answer.","What does this mean: Another innovative idea of DeepSeek is including the chain-of-thought to the reward, whereas conventional models only included final reward based on the answer.?","Another innovative idea of DeepSeek is including the chain-of-thought to the reward, whereas conventional models only included final reward based on the answer."
+"DeepSeek-V3 model, as V2 model did, adopted Group Relative POlicy Optimization (GRPO).","What does this mean: DeepSeek-V3 model, as V2 model did, adopted Group Relative POlicy Optimization (GRPO).?","DeepSeek-V3 model, as V2 model did, adopted Group Relative POlicy Optimization (GRPO)."
+"Conclusion
+DeepSeek-V3 model offered great opportunity for efficient training with cheaper GPUs.","What does this mean: Conclusion
+DeepSeek-V3 model offered great opportunity for efficient training with cheaper GPUs.?","Conclusion
+DeepSeek-V3 model offered great opportunity for efficient training with cheaper GPUs."
+"It is unclear that its performance exceeds the OpenAI model, but DeepSeek is way more economical to train and open-source model.","What does this mean: It is unclear that its performance exceeds the OpenAI model, but DeepSeek is way more economical to train and open-source model.?","It is unclear that its performance exceeds the OpenAI model, but DeepSeek is way more economical to train and open-source model."
+"AI researchers can directly use DeekSeek models and they can also implement the innovative ideas and designs in their own model, because the new methods of DeepSeek and source code are opened.","What does this mean: AI researchers can directly use DeekSeek models and they can also implement the innovative ideas and designs in their own model, because the new methods of DeepSeek and source code are opened.?","AI researchers can directly use DeekSeek models and they can also implement the innovative ideas and designs in their own model, because the new methods of DeepSeek and source code are opened."
+"Seemingly, the DeepSeek researchers have potential to come up with more advanced idea to improve the model performance and efficient training process.","What does this mean: Seemingly, the DeepSeek researchers have potential to come up with more advanced idea to improve the model performance and efficient training process.?","Seemingly, the DeepSeek researchers have potential to come up with more advanced idea to improve the model performance and efficient training process."
+DeepSeek’s AI Assistant overtook ChatGPT to become the most downloaded free app on the U.S. App Store.,What does this mean: DeepSeek’s AI Assistant overtook ChatGPT to become the most downloaded free app on the U.S. App Store.?,DeepSeek’s AI Assistant overtook ChatGPT to become the most downloaded free app on the U.S. App Store.
+"• Time duration 2 months with the cost of the *final training run being ~$5.5 million
+This ~$5.5M reflects the “rental” cost for the GPU hours needed to train DeepSeek‑V3.","What does this mean: • Time duration 2 months with the cost of the *final training run being ~$5.5 million
+This ~$5.5M reflects the “rental” cost for the GPU hours needed to train DeepSeek‑V3.?","• Time duration 2 months with the cost of the *final training run being ~$5.5 million
+This ~$5.5M reflects the “rental” cost for the GPU hours needed to train DeepSeek‑V3."
+"Recalculating FLOPs for Llama 3.1:
+`Using the same math: 3.64×10²⁵ FLOPs required`
+Scaling Efficiency
+Using the ratio of FLOPs needed for DeepSeek‑V3 versus Llama 3.1. and assuming similar inefficiencies.","What does this mean: Recalculating FLOPs for Llama 3.1:
+`Using the same math: 3.64×10²⁵ FLOPs required`
+Scaling Efficiency
+Using the ratio of FLOPs needed for DeepSeek‑V3 versus Llama 3.1. and assuming similar inefficiencies.?","Recalculating FLOPs for Llama 3.1:
+`Using the same math: 3.64×10²⁵ FLOPs required`
+Scaling Efficiency
+Using the ratio of FLOPs needed for DeepSeek‑V3 versus Llama 3.1. and assuming similar inefficiencies."
+The estimate adjusts to roughly 2.79M GPU hours for DeepSeek‑V3 training.,What does this mean: The estimate adjusts to roughly 2.79M GPU hours for DeepSeek‑V3 training.?,The estimate adjusts to roughly 2.79M GPU hours for DeepSeek‑V3 training.
+"DeepSeek‑V3 Reported Training Breakdown
+According to the DeepSeek‑V3 paper
+Pre‑training Stage:
+- Per Trillion Tokens: 180K H800 GPU hours
+- Overall Pre‑training: Total of 2,664K GPU hours
+- This stage was completed in less than two months using a cluster of 2,048 H800 GPUs.","What does this mean: DeepSeek‑V3 Reported Training Breakdown
+According to the DeepSeek‑V3 paper
+Pre‑training Stage:
+- Per Trillion Tokens: 180K H800 GPU hours
+- Overall Pre‑training: Total of 2,664K GPU hours
+- This stage was completed in less than two months using a cluster of 2,048 H800 GPUs.?","DeepSeek‑V3 Reported Training Breakdown
+According to the DeepSeek‑V3 paper
+Pre‑training Stage:
+- Per Trillion Tokens: 180K H800 GPU hours
+- Overall Pre‑training: Total of 2,664K GPU hours
+- This stage was completed in less than two months using a cluster of 2,048 H800 GPUs."
+"Cost Estimation
+Assumed GPU Rental Price: $2 per GPU hour
+Total Rental Cost:
+`2.788M GPU hours×$2/hour≈$5.576 million`
+as stated in Deepseek paper
+During the pre‑training stage, training DeepSeek‑V3 on each trillion tokens requires only 180K H800 GPU hours… Consequently, our pre‑training stage is completed in less than two months and costs 2664K GPU hours.","What does this mean: Cost Estimation
+Assumed GPU Rental Price: $2 per GPU hour
+Total Rental Cost:
+`2.788M GPU hours×$2/hour≈$5.576 million`
+as stated in Deepseek paper
+During the pre‑training stage, training DeepSeek‑V3 on each trillion tokens requires only 180K H800 GPU hours… Consequently, our pre‑training stage is completed in less than two months and costs 2664K GPU hours.?","Cost Estimation
+Assumed GPU Rental Price: $2 per GPU hour
+Total Rental Cost:
+`2.788M GPU hours×$2/hour≈$5.576 million`
+as stated in Deepseek paper
+During the pre‑training stage, training DeepSeek‑V3 on each trillion tokens requires only 180K H800 GPU hours… Consequently, our pre‑training stage is completed in less than two months and costs 2664K GPU hours."
+"Combined with 119K GPU hours for the context length extension and 5K GPU hours for post‑training, DeepSeek‑V3 costs only 2.788M GPU hours for its full training.","What does this mean: Combined with 119K GPU hours for the context length extension and 5K GPU hours for post‑training, DeepSeek‑V3 costs only 2.788M GPU hours for its full training.?","Combined with 119K GPU hours for the context length extension and 5K GPU hours for post‑training, DeepSeek‑V3 costs only 2.788M GPU hours for its full training."
+"Summary
+Theoretical (Perfect Efficiency) Estimate: ~0.4 M GPU hours (using idealised FLOP counts and assuming perfect hardware utilisation0
+Adjusted (Real‑World) Estimate (via Llama 3.1 comparison): ~2.79 GPU hours
+DeepSeek‑V3 Reported Breakdown:
+Pre‑training: 2,664K GPU hours
+Context Extension: 119K GPU hours
+Post‑training: 5K GPU hours
+Total: ~2.788 M GPU hours
+### Cost (at $2 per GPU hour): ~$5.576 million","What does this mean: Summary
+Theoretical (Perfect Efficiency) Estimate: ~0.4 M GPU hours (using idealised FLOP counts and assuming perfect hardware utilisation0
+Adjusted (Real‑World) Estimate (via Llama 3.1 comparison): ~2.79 GPU hours
+DeepSeek‑V3 Reported Breakdown:
+Pre‑training: 2,664K GPU hours
+Context Extension: 119K GPU hours
+Post‑training: 5K GPU hours
+Total: ~2.788 M GPU hours
+### Cost (at $2 per GPU hour): ~$5.576 million?","Summary
+Theoretical (Perfect Efficiency) Estimate: ~0.4 M GPU hours (using idealised FLOP counts and assuming perfect hardware utilisation0
+Adjusted (Real‑World) Estimate (via Llama 3.1 comparison): ~2.79 GPU hours
+DeepSeek‑V3 Reported Breakdown:
+Pre‑training: 2,664K GPU hours
+Context Extension: 119K GPU hours
+Post‑training: 5K GPU hours
+Total: ~2.788 M GPU hours
+### Cost (at $2 per GPU hour): ~$5.576 million"
+"# Design Notes
+
+## Design and implementation
+
+The 3FS system has four components: cluster manager, metadata service, storage service and client.","What does this mean: # Design Notes
+
+## Design and implementation
+
+The 3FS system has four components: cluster manager, metadata service, storage service and client.?","# Design Notes
+
+## Design and implementation
+
+The 3FS system has four components: cluster manager, metadata service, storage service and client."
+"A 3FS file is split into equally sized chunks, which are replicated over multiple SSDs.","What does this mean: A 3FS file is split into equally sized chunks, which are replicated over multiple SSDs.?","A 3FS file is split into equally sized chunks, which are replicated over multiple SSDs."
+Adapting file-based data loaders to use the 3FS FUSE client or native client is straightforward.,What does this mean: Adapting file-based data loaders to use the 3FS FUSE client or native client is straightforward.?,Adapting file-based data loaders to use the 3FS FUSE client or native client is straightforward.
+"data analytics, perform large block writes on 3FS or they can buffer data in memory and flush it to 3FS when write buffer is full.","What does this mean: data analytics, perform large block writes on 3FS or they can buffer data in memory and flush it to 3FS when write buffer is full.?","data analytics, perform large block writes on 3FS or they can buffer data in memory and flush it to 3FS when write buffer is full."
+But they perform poorly when handling small random reads on FUSE-mounted 3FS.,What does this mean: But they perform poorly when handling small random reads on FUSE-mounted 3FS.?,But they perform poorly when handling small random reads on FUSE-mounted 3FS.
+"## File metadata store
+
+### Location of file chunks
+
+3FS divides file data into equally sized chunks and stripes them across multiple replication chains (replication chains and chain tables are defined in Section [Data placement](#data-placement)).","What does this mean: ## File metadata store
+
+### Location of file chunks
+
+3FS divides file data into equally sized chunks and stripes them across multiple replication chains (replication chains and chain tables are defined in Section [Data placement](#data-placement)).?","## File metadata store
+
+### Location of file chunks
+
+3FS divides file data into equally sized chunks and stripes them across multiple replication chains (replication chains and chain tables are defined in Section [Data placement](#data-placement))."
+"### File metadata on transactional key-value store
+
+3FS uses FoundationDB as its distributed storage system for metadata.","What does this mean: ### File metadata on transactional key-value store
+
+3FS uses FoundationDB as its distributed storage system for metadata.?","### File metadata on transactional key-value store
+
+3FS uses FoundationDB as its distributed storage system for metadata."
+3FS stores all metadata as key-value pairs in FoundationDB.,What does this mean: 3FS stores all metadata as key-value pairs in FoundationDB.?,3FS stores all metadata as key-value pairs in FoundationDB.
+"Since training jobs do not depend on this feature, 3FS does not track file descriptors opened in read-only mode.","What does this mean: Since training jobs do not depend on this feature, 3FS does not track file descriptors opened in read-only mode.?","Since training jobs do not depend on this feature, 3FS does not track file descriptors opened in read-only mode."
+3FS maintains a file session for each file descriptor (fd) opened in write mode since deleting write opened files may lead to unreclaimable garbage chunks from concurrent writes.,What does this mean: 3FS maintains a file session for each file descriptor (fd) opened in write mode since deleting write opened files may lead to unreclaimable garbage chunks from concurrent writes.?,3FS maintains a file session for each file descriptor (fd) opened in write mode since deleting write opened files may lead to unreclaimable garbage chunks from concurrent writes.
+"To prevent lingering sessions from offline clients, the 3FS meta service periodically checks client liveness and cleans up sessions of offline clients.","What does this mean: To prevent lingering sessions from offline clients, the 3FS meta service periodically checks client liveness and cleans up sessions of offline clients.?","To prevent lingering sessions from offline clients, the 3FS meta service periodically checks client liveness and cleans up sessions of offline clients."
+The read/write throughput of 3FS should scale linearly with the number of SSDs and bisection network bandwidth between clients and storage services.,What does this mean: The read/write throughput of 3FS should scale linearly with the number of SSDs and bisection network bandwidth between clients and storage services.?,The read/write throughput of 3FS should scale linearly with the number of SSDs and bisection network bandwidth between clients and storage services.
